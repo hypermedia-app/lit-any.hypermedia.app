@@ -5,27 +5,14 @@
         "no-console": 0,
         "indent": [ "error", 4, { "SwitchCase": 1 } ],
         "no-underscore-dangle": "off",
-        "no-trailing-spaces":"error"
+        "no-trailing-spaces":"error",
+        "import/no-extraneous-dependencies": "off",
+        "import/first": "off",
+        "no-alert": "off"
     },
     "parser": "babel-eslint",
     "parserOptions": {
         "sourceType": "module",
         "allowImportExportEverywhere": true
-    },
-    "plugins": [
-        "jasmine",
-        "sinon",
-        "chai"
-    ],
-    "env": {
-        "jasmine": true,
-        "browser": true,
-        "mocha": true
-    },
-    "globals": {
-        "testHandler": true,
-        "sinon": true,
-        "fixture": true,
-        "Polymer": true
     }
 }
