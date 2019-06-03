@@ -1,17 +1,17 @@
 {
   "private": true,
   "name": "lit-any.hypermedia.app",
-  "version": "0.8.0",
+  "version": "0.9.0-a1",
   "scripts": {
     "lint": "eslint . --quiet",
     "storybook": "start-storybook -p 9001 -c storybook/.storybook",
     "build-storybook": "rm -rf docs; build-storybook -c storybook/.storybook -o docs"
   },
   "dependencies": {
-    "@lit-any/components-paper-elements": "git+https://github.com/hypermedia-app/lit-any-components-paper-elements.git",
-    "@lit-any/components-vaadin": "git+https://github.com/hypermedia-app/lit-any-components-vaadin.git",
-    "@lit-any/forms": "git+https://github.com/hypermedia-app/lit-any-forms.git",
-    "@lit-any/views": "git+https://github.com/hypermedia-app/lit-any-views.git",
+    "@lit-any/components-paper-elements": "^0.9.0-a1",
+    "@lit-any/components-vaadin": "^0.9.0-a1",
+    "@lit-any/forms": "^0.9.0-a1",
+    "@lit-any/views": "^0.9.0-a1",
     "lit-element": "^2.1.0",
     "lit-html": "^1.1.0",
     "zero-md": "https://github.com/zerodevx/zero-md",
