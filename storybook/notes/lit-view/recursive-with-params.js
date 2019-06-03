@@ -1,4 +1,4 @@
-import { md, sample } from '../markdown';
+import { md, sample } from '../markdown'
 
 export default function notes(view) {
     return md`# Optional parameters in child views
@@ -42,5 +42,5 @@ Registry.default
 Note that the \`params\` argument is placed second, where the scope typically resides. If the scope is also used, the
 call would be changed to \`render(person.birthDate, 'scope', params)\`.
 
-[sroot]: https://www.webcomponents.org/specs#the-shadow-dom-specification`;
+[sroot]: https://www.webcomponents.org/specs#the-shadow-dom-specification`
 }

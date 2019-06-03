@@ -1,4 +1,4 @@
-import { md, sample } from '../../markdown';
+import { md, sample } from '../../markdown'
 
 export default function notes(staticSelection, funcItems) {
     return md`# Paper elements
@@ -59,5 +59,5 @@ Registry.default
 | Name | expected values | default value |
 |--|--|
 | **items** | Array or function | \`[]\` |
-`;
+`
 }

@@ -1,4 +1,4 @@
-import { md, sample } from '../markdown';
+import { md, sample } from '../markdown'
 
 export default function notes(exampleForm) {
     return md`# Component sets
@@ -44,5 +44,5 @@ Registry.when
             { value: 'pl', label: 'Polish' },
         ],
     }));
---- `;
+--- `
 }

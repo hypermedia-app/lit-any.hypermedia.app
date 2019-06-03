@@ -1,4 +1,4 @@
-import { md, sample } from '../markdown';
+import { md, sample } from '../markdown'
 
 export default function notes(view) {
     return md`# Nesting views
@@ -46,5 +46,5 @@ need arise to isolate part of lit-any's renderings, actual [view elements can be
 to produce an equivalent result.
 
 [sroot]: https://www.webcomponents.org/specs#the-shadow-dom-specification
-[nest-view]: ?selectedKind=lit-view/nesting&selectedStory=using%20view%20element`;
+[nest-view]: ?selectedKind=lit-view/nesting&selectedStory=using%20view%20element`
 }

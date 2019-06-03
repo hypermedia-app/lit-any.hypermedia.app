@@ -1,3 +1,3 @@
 export default function (value) {
-    console.log('selected value:', value);
+    console.log('selected value:', value)
 }

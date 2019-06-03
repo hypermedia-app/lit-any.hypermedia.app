@@ -1,4 +1,4 @@
-import { md, sample } from '../markdown';
+import { md, sample } from '../markdown'
 
 export default function notes(view) {
     return md`# Basic usage
@@ -39,5 +39,5 @@ rendered.
 The function passed to \`renders\` takes the rendered object as parameter and must return [lit-html's][html] 
 template string.
 
-[html]: https://polymer.github.io/lit-html/guide/#lit-html-templates`;
+[html]: https://polymer.github.io/lit-html/guide/#lit-html-templates`
 }

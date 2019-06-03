@@ -1,4 +1,4 @@
-import { md, sample } from '../markdown';
+import { md, sample } from '../markdown'
 
 export default function notes(form) {
     return md`# Customizing individual fields
@@ -59,5 +59,5 @@ This method is more interesting as it takes four parameters
     value in different format (such as is the case here, where \`<paper-input>\`'s value is a string even
     though its type is set to number). For this reason it's the developer's responsibility to bind to the
     element's change event, convert the value to the correct type and call the setter function to propagate
-    the change.`;
+    the change.`
 }

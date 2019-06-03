@@ -1,4 +1,4 @@
-import { md, sample } from '../../markdown';
+import { md, sample } from '../../markdown'
 
 export default function notes(field) {
     return md`
@@ -27,5 +27,5 @@ Registry.default
 
 | Name | expected values | default value |
 |--|--|
-| **type** | \`'single line'\`, \`'multi line'\` | \`'single line'\` |`;
+| **type** | \`'single line'\`, \`'multi line'\` | \`'single line'\` |`
 }

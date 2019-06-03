@@ -1,5 +1,5 @@
-import stringifyObject from 'stringify-object';
-import { md, sample } from '../markdown';
+import stringifyObject from 'stringify-object'
+import { md, sample } from '../markdown'
 
 export default function notes(form, contract, decorator) {
     return md`# Decorating field getter and setter
@@ -92,5 +92,5 @@ A decorator can implement a \`wrap\` and \`unwrap\` functions. Both are optional
 bind to the input element.
 
 \`wrap\` does the opposite. It takes the user input as parameter and returns the value to apply to the
-form's model.`;
+form's model.`
 }

@@ -1,4 +1,4 @@
-import { md, sample } from '../markdown';
+import { md, sample } from '../markdown'
 
 export default function notes(example) {
     return md`# Fallback field
@@ -28,5 +28,5 @@ Registry.default.when
 --- 
 
 Note that field templates are selected in the same order they were registered, which means that a catch-all
-template must be added last. Otherwise \`<lit-form>\` will use it for the entire form.`;
+template must be added last. Otherwise \`<lit-form>\` will use it for the entire form.`
 }

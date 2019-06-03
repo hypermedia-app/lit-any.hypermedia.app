@@ -1,4 +1,4 @@
-import { md, sample } from '../markdown';
+import { md, sample } from '../markdown'
 
 export default function notes(view) {
     return md`# Nesting views
@@ -33,5 +33,5 @@ Registry.default
 The difference this is that each \`<lit-view>\` element creates a [Shadow Root][sroot] or its content, which
 may be useful when there is desire to isolate portions of the generated HTML.
 
-[sroot]: https://www.webcomponents.org/specs#the-shadow-dom-specification`;
+[sroot]: https://www.webcomponents.org/specs#the-shadow-dom-specification`
 }

@@ -1,4 +1,4 @@
-import { md, sample } from '../markdown';
+import { md, sample } from '../markdown'
 
 export default function notes(form) {
     return md`# Controlling \`<lit-form>\`
@@ -59,5 +59,5 @@ Whenever submitted (manually or otherwise), the element will emit a \`submit\` e
 --- html
 <lit-form @submit="handleSubmit"></lit-form>
 --- 
-`;
+`
 }

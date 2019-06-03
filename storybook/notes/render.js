@@ -1,4 +1,4 @@
-import { md, sample } from './markdown';
+import { md, sample } from './markdown'
 
 export default function notes(view) {
     return md`## Manually render to container
@@ -26,5 +26,5 @@ const personContainer = document.createElement('div');
 
 const view = renderView(ViewTemplates.default, { value }, false);
 render(view, personContainer);
----`;
+---`
 }

@@ -15,7 +15,7 @@ setOptions({
     name: `lit-any ${litAny.version}`,
     addonPanelInRight: true,
     selectedAddonPanel: 'storybooks/storybook-addon-knobs',
-    url: 'https://github.com/wikibus/lit-any',
+    url: 'https://github.com/hypermedia-app/lit-any-core',
     sortStoriesByKind: true,
 });
 
