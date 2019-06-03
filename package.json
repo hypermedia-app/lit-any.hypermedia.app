@@ -8,10 +8,13 @@
     "build-storybook": "rm -rf docs; build-storybook -c storybook/.storybook -o docs"
   },
   "dependencies": {
-    "@lit-any/lit-any": "^0.8.2",
-    "@lit-any/components-vaadin": "^0.8.0",
-    "@lit-any/components-paper-elements": "^0.8.2",
-    "lit-html": "^1.1.0"
+    "@lit-any/components-paper-elements": "git+https://github.com/hypermedia-app/lit-any-components-paper-elements.git",
+    "@lit-any/components-vaadin": "git+https://github.com/hypermedia-app/lit-any-components-vaadin.git",
+    "@lit-any/forms": "git+https://github.com/hypermedia-app/lit-any-forms.git",
+    "@lit-any/views": "git+https://github.com/hypermedia-app/lit-any-views.git",
+    "lit-element": "^2.1.0",
+    "lit-html": "^1.1.0",
+    "once": "^1.4.0"
   },
   "devDependencies": {
     "babel-loader": "^8.0.6",

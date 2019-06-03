@@ -1,16 +1,32 @@
 import { storiesOf } from '@storybook/polymer';
-import * as vaadin from '@lit-any/components-vaadin';
-import * as paper from '@lit-any/components-paper-elements';
-import '@lit-any/lit-any/lit-form';
-import FieldTemplates from '@lit-any/lit-any/forms';
-import * as components from '@lit-any/lit-any/components';
+import vaadin from '@lit-any/components-vaadin';
+import paper from '@lit-any/components-paper-elements';
+import '@lit-any/forms/lit-form';
+import { FieldTemplates } from '@lit-any/forms';
+import * as components from '@lit-any/forms/components';
 import { html } from 'lit-html';
 import { select, boolean } from '@storybook/addon-knobs';
+import * as once from 'once';
 
 import onSubmit from '../helpers/submit-handler';
 import notes from '../notes/components/getting-started';
 
 const componentSets = { paper, vaadin };
+
+const registerTemplates = once((templates) => {
+    templates.when.fieldMatches(f => f.property === 'description')
+        .rendersComponent(components.textbox({ type: 'multi line' }));
+    templates.when.fieldMatches(f => f.type === 'string')
+        .rendersComponent(components.textbox());
+    templates.when.fieldMatches(f => f.type === 'language')
+        .rendersComponent(components.dropdown({
+            items: [
+                { value: 'en', label: 'English' },
+                { value: 'de', label: 'German' },
+                { value: 'pl', label: 'Polish' },
+            ],
+        }));
+});
 
 storiesOf('lit-form/component sets', module)
     .add('getting started', () => {
@@ -18,18 +34,7 @@ storiesOf('lit-form/component sets', module)
         const templates = FieldTemplates.byName('components-complete')
             .useComponents(componentSets[selectedSet]);
 
-        templates.when.fieldMatches(f => f.property === 'description')
-            .rendersComponent(components.textbox({ type: 'multi line' }));
-        templates.when.fieldMatches(f => f.type === 'string')
-            .rendersComponent(components.textbox());
-        templates.when.fieldMatches(f => f.type === 'language')
-            .rendersComponent(components.dropdown({
-                items: [
-                    { value: 'en', label: 'English' },
-                    { value: 'de', label: 'German' },
-                    { value: 'pl', label: 'Polish' },
-                ],
-            }));
+        registerTemplates(templates);
 
         const c = {
             fields: [

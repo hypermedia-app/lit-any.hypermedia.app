@@ -2,7 +2,7 @@ import iso from 'iso-639-1';
 import { storiesOf } from '@storybook/polymer/dist/client/index';
 import { boolean, select } from '@storybook/addon-knobs';
 
-import { dropdown } from '@lit-any/components-vaadin';
+import dropdown from '@lit-any/components-vaadin/dropdown';
 import docs from '../../notes/components/vaadin/dropdown';
 import set from '../set-logger';
 

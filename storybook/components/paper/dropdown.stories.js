@@ -2,7 +2,7 @@ import iso from 'iso-639-1';
 import { storiesOf } from '@storybook/polymer/dist/client/index';
 import { boolean, select } from '@storybook/addon-knobs';
 
-import { dropdown } from '@lit-any/components-paper-elements';
+import dropdown from '@lit-any/components-paper-elements/dropdown';
 import docs from '../../notes/components/polymer-elements/dropdown';
 import set from '../set-logger';
 

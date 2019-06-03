@@ -1,18 +1,31 @@
 {
-    "extends": "airbnb-base",
-    "root": true,
-    "rules": {
-        "no-console": 0,
-        "indent": [ "error", 4, { "SwitchCase": 1 } ],
-        "no-underscore-dangle": "off",
-        "no-trailing-spaces":"error",
-        "import/no-extraneous-dependencies": "off",
-        "import/first": "off",
-        "no-alert": "off"
-    },
-    "parser": "babel-eslint",
-    "parserOptions": {
-        "sourceType": "module",
-        "allowImportExportEverywhere": true
-    }
+  "extends": [
+    "@open-wc/eslint-config",
+    "standard"
+  ],
+  "root": true,
+  "rules": {
+    "indent": "off",
+    "import/no-unresolved": "warn",
+    "import/named": "off",
+    "space-before-function-paren": [
+      "error",
+      {
+        "named": "never"
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ]
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2017
+  },
+  "plugins": [
+    "@typescript-eslint/eslint-plugin",
+    "lit"
+  ]
 }

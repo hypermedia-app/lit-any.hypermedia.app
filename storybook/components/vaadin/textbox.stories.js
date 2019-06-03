@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/polymer/dist/client/index';
 import { boolean, select } from '@storybook/addon-knobs';
 
-import { textbox } from '@lit-any/components-vaadin';
+import textbox from '@lit-any/components-vaadin/textbox';
 import docs from '../../notes/components/vaadin/textbox';
 import set from '../set-logger';
 
