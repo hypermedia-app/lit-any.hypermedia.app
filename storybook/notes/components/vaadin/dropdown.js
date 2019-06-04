@@ -41,15 +41,13 @@ dropdown({
 });
 --- 
 
-It can also return a promise.
-
 ## Usage
 
 --- js
 import { dropdown } from '@lit-any/components-vaadin';
-import Registry from '@lit-any/lit-any/forms;
+import { ViewTemplates } from '@lit-any/forms;
 
-Registry.default
+ViewTemplates.default
     .when(f => f.type === 'string')
     .renders(dropdown(options));
 --- 
@@ -57,6 +55,6 @@ Registry.default
 ### Options
 
 | Name | expected values | default value |
-|--|--|
+|--|--|--|
 | **items** | Array or function | \`[]\` |`
 }

@@ -47,9 +47,9 @@ It can also return a promise.
 
 --- js
 import { dropdown } from '@lit-any/components-paper-elements';
-import Registry from '@lit-any/lit-any/forms;
+import { ViewTemplates } from '@lit-any/forms;
 
-Registry.default
+ViewTemplates.default
     .when(f => f.type === 'string')
     .renders(dropdown(options));
 --- 
@@ -57,7 +57,7 @@ Registry.default
 ### Options
 
 | Name | expected values | default value |
-|--|--|
-| **items** | Array or function | \`[]\` |
+|--|--|--|
+| **items** | Array or function or Promise thereof | \`[]\` |
 `
 }

@@ -9,10 +9,10 @@ the component kind (textbox, dropdown, etc) and the actual element being rendere
 ## Setting up template registry
 
 --- js
-import Registry from '@lit-any/lit-any/forms;
-import * as paperElements from '@lit-any/components-paper-elements';
+import { ViewTemplates } from '@lit-any/forms;
+import paperElements from '@lit-any/components-paper-elements';
 
-Registry.default.useComponents(paperElements);
+ViewTemplates.default.useComponents(paperElements);
 --- 
 
 Switching the **component set** knob let's you quickly change the appearance of the entire form below. Individual fields
@@ -22,7 +22,7 @@ ${sample(exampleForm)}
 
 ## Individual fields
     
-Individual field templates are configured slightly different, using a \`renderComponent\` method instead of \`render\`.
+Individual field templates are configured slightly different, using the \`rendersComponent\` method instead of \`render\`.
 It accepts an \`{ type, options }\` object where the \`type\` is a string which must match the component name from the set
 and the \`options\` will be passed to the actual builder of the chosen component. 
 
@@ -32,10 +32,10 @@ For common component those objects do not have to be constructed manually. Inste
 Here's how the form above is configured to render a dropdown menu for a \`languages\` property.
 
 --- js
-import { dropdown } from '@lit-any/lit-any/components';
-import Registry from '@lit-any/lit-any/forms;
+import { dropdown } from '@lit-any/forms/components';
+import { ViewTemplates } from '@lit-any/forms;
 
-Registry.when
+ViewTemplates.when
     .fieldMatches(f => f.type === 'language')
     .rendersComponent(dropdown({
         items: [

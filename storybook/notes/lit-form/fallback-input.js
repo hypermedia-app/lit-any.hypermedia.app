@@ -15,9 +15,9 @@ field given.
 
 --- js
 import { html } from 'lit-html'
-import Registry from '@lit-any/lit-any/forms';
+import { FieldTemplates } from '@lit-any/forms';
 
-Registry.default.when
+FieldTemplates.default.when
     .fieldMatches(() => true)
     .renders((field, id, value, set) => {
         html\`<paper-input id=$\{id} 

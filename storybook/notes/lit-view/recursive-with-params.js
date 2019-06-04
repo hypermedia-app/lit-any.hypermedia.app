@@ -19,9 +19,9 @@ In the example below the top render function provides a moment date format strin
 ---js
 import { html } from 'lit-html'; 
 import moment from 'moment'; 
-import Registry from '@lit-any/lit-any/views';
+import { ViewTemplates } from '@lit-any/views';
 
-Registry.default
+ViewTemplates.default
     .when
     .valueMatches(value => value.type === 'Person')
     .renders((person, render) => {
@@ -33,7 +33,7 @@ Registry.default
                     I was born on $\{render(person.birthDate, params)}\`;
     });
 
-Registry.default
+ViewTemplates.default
     .when
     .valueMatches(v => v instanceof Date || Date.parse(value))
     .renders((date, next, scope, params) => html\`$\{moment(date).format(params.format)}\`);

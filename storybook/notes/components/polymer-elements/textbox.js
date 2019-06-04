@@ -16,9 +16,9 @@ ${sample(field)}
 
 --- js
 import { textbox } from '@lit-any/components-paper-elements';
-import Registry from '@lit-any/lit-any/forms;
+import { ViewTemplates } from '@lit-any/forms;
 
-Registry.default
+ViewTemplates.default
     .when(f => f.type === 'string')
     .renders(textbox(options));
 --- 
@@ -26,6 +26,6 @@ Registry.default
 ### Options
 
 | Name | expected values | default value |
-|--|--|
+|--|--|--|
 | **type** | \`'single line'\`, \`'multi line'\` | \`'single line'\` |`
 }

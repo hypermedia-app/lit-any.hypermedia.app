@@ -21,9 +21,9 @@ property. It will effectively be rendered by the second partial.
 --- js
 import { html } from 'lit-html'; 
 import moment from 'moment'; 
-import Registry from '@lit-any/lit-any/views';
+import { ViewTemplates } from '@lit-any/views';
 
-Registry.default
+ViewTemplates.default
     .when
     .valueMatches(v => v.type === 'Person')
     .renders((person, render) => 

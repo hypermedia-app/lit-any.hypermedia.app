@@ -25,10 +25,10 @@ How the value is displayed will be determined by matching the value with templat
 registry. Here's an example setup of a template which renders objects where \`object.type == 'Person'\`.
 
 --- js
-import { html } from 'lit-html/lib/extended';
-import Registry from '@lit-any/lit-any/views';
+import { html } from 'lit-html';
+import { ViewTemplates } from '@lit-any/views';
 
-Registry.default.when
+ViewTemplates.default.when
     .valueMatches(v => v.type === 'Person')
     .renders(person =>  html\`Hello, my name is $\{person.fullName}\`);
 --- 
