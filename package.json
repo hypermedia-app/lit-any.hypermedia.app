@@ -1,17 +1,17 @@
 {
   "private": true,
   "name": "lit-any.hypermedia.app",
-  "version": "0.9.0-a1",
+  "version": "0.9.0-a2",
   "scripts": {
     "lint": "eslint . --quiet",
     "storybook": "start-storybook -p 9001 -c storybook/.storybook",
     "build": "rm -rf docs; build-storybook -c storybook/.storybook -o docs"
   },
   "dependencies": {
-    "@lit-any/components-paper-elements": "^0.9.0-a1",
-    "@lit-any/components-vaadin": "^0.9.0-a1",
-    "@lit-any/forms": "^0.9.0-a1",
-    "@lit-any/views": "^0.9.0-a1",
+    "@lit-any/components-paper-elements": "^0.9.0-a2",
+    "@lit-any/components-vaadin": "^0.9.0-a2",
+    "@lit-any/forms": "^0.9.0-a2",
+    "@lit-any/views": "^0.9.0-a2",
     "@polymer/paper-card": "^3.0.1",
     "@polymer/paper-input": "^3.0.1",
     "@storybook/addon-knobs": "^4.1.2",
