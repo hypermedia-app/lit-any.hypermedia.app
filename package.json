@@ -8,10 +8,10 @@
     "build": "rm -rf docs; build-storybook -c storybook/.storybook -o docs"
   },
   "dependencies": {
-    "@lit-any/components-paper-elements": "^0.9.0-a2",
-    "@lit-any/components-vaadin": "^0.9.0-a2",
-    "@lit-any/forms": "^0.9.0-a2",
-    "@lit-any/views": "^0.9.0-a2",
+    "@lit-any/components-paper-elements": "^0.9.0",
+    "@lit-any/components-vaadin": "^0.9.0",
+    "@lit-any/forms": "^0.9.0",
+    "@lit-any/views": "^0.9.0",
     "@polymer/paper-card": "^3.0.1",
     "@polymer/paper-input": "^3.0.1",
     "@storybook/addon-knobs": "^4.1.2",
