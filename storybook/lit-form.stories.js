@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/polymer'
 import {
  select, button, object, text, boolean,
 } from '@storybook/addon-knobs'
-import '@lit-any/forms/lib/lit-form'
+import '@lit-any/forms/lit-form'
 import { FieldTemplates } from '@lit-any/forms'
 import {
  defaultValue, submitButton, resetButton, contract, noSubmitButton, noResetButton, showLabels,
