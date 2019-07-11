@@ -10,7 +10,7 @@
   "dependencies": {
     "@lit-any/components-paper-elements": "^0.9.0",
     "@lit-any/components-vaadin": "^0.9.0",
-    "@lit-any/forms": "^0.9.3",
+    "@lit-any/forms": "^0.9.4",
     "@lit-any/views": "^0.9.1",
     "@polymer/paper-card": "^3.0.1",
     "@polymer/paper-input": "^3.0.1",
