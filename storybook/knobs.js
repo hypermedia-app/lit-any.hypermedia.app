@@ -4,10 +4,14 @@ export const noSubmitButton = (boolean, v) => boolean('No submit button', typeof
 
 export const noResetButton = (boolean, v) => boolean('No reset button', typeof v === 'boolean' ? v : false)
 
+export const noClearButton = (boolean, v) => boolean('No clear button', typeof v === 'boolean' ? v : false)
+
 export const defaultValue = (object, v) => object('Value', v)
 
 export const submitButton = (text, v) => text('Submit button label', v)
 
 export const resetButton = (text, v) => text('Reset button label', v)
+
+export const clearButton = (text, v) => text('Clear button label', v)
 
 export const contract = (object, c) => object('Contract', c)

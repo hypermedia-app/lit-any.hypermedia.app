@@ -6,7 +6,15 @@ import {
 import '@lit-any/forms/lit-form'
 import { FieldTemplates } from '@lit-any/forms'
 import {
- defaultValue, submitButton, resetButton, contract, noSubmitButton, noResetButton, showLabels,
+    defaultValue,
+    submitButton,
+    resetButton,
+    contract,
+    noSubmitButton,
+    noResetButton,
+    showLabels,
+    noClearButton,
+    clearButton,
 } from './knobs'
 import onSubmit from './helpers/submit-handler'
 import buttonsNotes from './notes/lit-form/buttons'
@@ -76,8 +84,13 @@ storiesOf('lit-form', module)
             form = part.element
         }
 
+        const value = {
+            age: 18,
+        }
+
         button('Submit programmatically', () => form.submit())
         button('Reset programmatically', () => form.reset())
+        button('Clear programmatically', () => form.clear())
 
         return buttonsNotes(html`
 <lit-form .ref="${directive(getForm)}"
@@ -86,6 +99,9 @@ storiesOf('lit-form', module)
           .submitButtonLabel=${submitButton(text, 'Submit')}
           .noResetButton="${noResetButton(boolean)}"
           .resetButtonLabel=${resetButton(text, 'Reset')}
+          .noClarButton="${noClearButton(boolean)}"
+          .clearButtonLabel=${clearButton(text, 'Clear')}
+          .value="${value}"
           @submit="${onSubmit}"></lit-form>`)
     })
 
